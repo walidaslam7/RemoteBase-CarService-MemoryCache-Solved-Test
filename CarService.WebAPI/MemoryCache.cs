@@ -6,17 +6,17 @@ using System.Linq;
 
 namespace CarService.WebAPI
 {
-    public interface ImCache
+    public interface IMemoryCache
     {
         void CreateCache(List<Car> model, string key);
         void RemoveFromCacheById(int id, string key);
         List<Car> GetCacheByKey(string key);
         void RemoveCacheByKey(string key);
     }
-    public class MemoryCache : ImCache
+    public class MemoryCache : IMemoryCache
     {
-        private readonly IMemoryCache _memoryCache;
-        public MemoryCache(IMemoryCache memoryCache)
+        private readonly Microsoft.Extensions.Caching.Memory.IMemoryCache _memoryCache;
+        public MemoryCache(Microsoft.Extensions.Caching.Memory.IMemoryCache memoryCache)
         {
             _memoryCache = memoryCache;
         }

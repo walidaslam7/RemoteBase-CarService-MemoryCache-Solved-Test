@@ -26,7 +26,7 @@ namespace CarService.WebAPI
         {
             services.AddMemoryCache();
             services.AddScoped<ICarsService, CarsService>();
-            services.AddScoped<ImCache, MemoryCache>();
+            services.AddScoped<IMemoryCache, MemoryCache>();
             services.AddDbContext<CarContext>(options => options.UseLazyLoadingProxies().UseSqlite($"Data Source={DatabaseFileName}"));
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
             services.AddControllers();

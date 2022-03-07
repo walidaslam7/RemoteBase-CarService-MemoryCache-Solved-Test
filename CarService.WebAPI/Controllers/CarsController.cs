@@ -13,9 +13,9 @@ namespace CarService.WebAPI.Controllers
     public class CarsController : ControllerBase
     {
         private readonly ICarsService _carsService;
-        private readonly ImCache _memoryCache;
+        private readonly IMemoryCache _memoryCache;
         private readonly string key = "car";
-        public CarsController(ICarsService carsService, ImCache memoryCache)
+        public CarsController(ICarsService carsService, IMemoryCache memoryCache)
         {
             _carsService = carsService;
             _memoryCache = memoryCache;
