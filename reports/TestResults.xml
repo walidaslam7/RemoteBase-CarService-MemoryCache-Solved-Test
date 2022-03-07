@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<assemblies timestamp="03/07/2022 18:44:13">
+  <assembly name="/projects/challenge/CarService.Tests/bin/Debug/netcoreapp3.0/CarService.Tests.dll" run-date="2022-03-07" run-time="18:44:13" total="2" passed="0" failed="2" skipped="0" time="15.486" errors="0">
+    <errors />
+    <collection total="2" passed="0" failed="2" skipped="0" name="Test collection for CarService.Tests.IntegrationTests" time="15.486">
+      <test name="CarService.Tests.IntegrationTests.Test1" type="CarService.Tests.IntegrationTests" method="Test1" time="5.3136702" result="Fail">
+        <failure>
+          <message>Expected sw.ElapsedMilliseconds to be less than 2000L, but found 2006L.</message>
+          <stack-trace>   at FluentAssertions.Execution.XUnit2TestFramework.Throw(String message)
+   at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)
+   at FluentAssertions.Execution.DefaultAssertionStrategy.HandleFailure(String message)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(String message, Object[] args)
+   at FluentAssertions.Numeric.NumericAssertions`1.BeLessThan(T expected, String because, Object[] becauseArgs)
+   at CarService.Tests.IntegrationTests.Test1() in /projects/challenge/CarService.Tests/IntegrationTests.cs:line 76
+--- End of stack trace from previous location where exception was thrown ---</stack-trace>
+        </failure>
+        <traits />
+      </test>
+      <test name="CarService.Tests.IntegrationTests.Test2" type="CarService.Tests.IntegrationTests" method="Test2" time="10.1726869" result="Fail">
+        <failure>
+          <message>Expected sw.ElapsedMilliseconds to be less than 2000L, but found 2010L.</message>
+          <stack-trace>   at FluentAssertions.Execution.XUnit2TestFramework.Throw(String message)
+   at FluentAssertions.Execution.TestFrameworkProvider.Throw(String message)
+   at FluentAssertions.Execution.DefaultAssertionStrategy.HandleFailure(String message)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(Func`1 failReasonFunc)
+   at FluentAssertions.Execution.AssertionScope.FailWith(String message, Object[] args)
+   at FluentAssertions.Numeric.NumericAssertions`1.BeLessThan(T expected, String because, Object[] becauseArgs)
+   at CarService.Tests.IntegrationTests.Test2() in /projects/challenge/CarService.Tests/IntegrationTests.cs:line 107
+--- End of stack trace from previous location where exception was thrown ---</stack-trace>
+        </failure>
+        <traits />
+      </test>
+    </collection>
+  </assembly>
+</assemblies>
